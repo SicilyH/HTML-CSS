@@ -3,8 +3,72 @@
 	<head>
 		<meta charset="utf-8">
 		<title>R.T Flourist</title>
+		<script src="One-Page-Website/onepage.js"></script>
+		<script src="one_page_website.html"></script>
+		<link rel="stylesheet" href="onepage.css">
 	<head>
 	<body>
+		<!-- Images used to open the lightbox -->
+<div class="row">
+	<div class="column">
+		<img src="RTF IMAGES/indigo.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+	</div>
+	<div class="column">
+		<img src="RTF IMAGES/sherbert.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+	</div>
+	<div class="column">
+		<img src="RTF IMAGES/RT IMAGES.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+	</div>
+
+	<!-- The Modal/Lightbox-->
+	<div id="myModal" class="modal">
+		<span class="close cursor" onclick="closeModal()">&times;</span>
+		<div class="modal-content">
+
+			<div class="mySlides">
+				<div class="numbertext">1 / 3</div>
+				<img src="RTF IMAGES/indigo.jpg" style="width:50%">
+			</div>
+
+			<div class="mySlides">
+				<div class="numbertext">2 / 3</div>
+				<img src="RTF IMAGES/sherbert.jpg" style="width:50%">
+			</div>
+
+			<div class="mySlides">
+				<div class="numbertext">3 / 3</div>
+				<img src="RTF IMAGES/RT IMAGES.jpg" style="width:50%">
+			</div>
+
+			<!-- Next/Previous Controls-->
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+			<!-- Caption text -->
+			<div class ="caption-container">
+			<p id="caption"></p>
+			</div>
+
+			<!-- Thumbnail image controls -->
+			<div class="column">
+			<img class="demo" src="RTF IMAGES/indigo.jpg" onclick="currentSlide(1)" alt="Bouquet1">
+			</div>
+
+			<div class="column">
+				<img class="demo" src="RTF IMAGES/sherbert.jpg" onclick="currentSlide(1)" alt="Bouquet2">
+				</div>
+
+			<div class="column">
+				<img class="demo" src="RTF IMAGES/RT IMAGES.jpg" onclick="currentSlide(1)" alt="Bouquet3">
+				</div>
+
+
+
+
+		</div>
+	</div>
+</div>
+
 	<!-- NAV -->
 	<header>R.T FLOURIST</header>
 	</body>
@@ -24,7 +88,7 @@
 	<section>
 			<div id="home">
 				<h1>Home</h1>
-				<p>Welcome to R.T Flourists and thank you for taking the time to visit our website. Here you will be able to view our floral selection, prices, view a video on flowers facts and if interested in a floral arrangement, you can fill out our contact form below.</p>
+				<p>Welcome to R.T Flourists and thank you for taking the time to visit our website. Here you will be able to view our floral selection, prices, watch a video on flower facts and if interested in a floral arrangement, you can fill out our contact form below.</p>
 				 <iframe src"<iframe width="560" height="315" src="https://www.youtube.com/embed/PohyUZS0kck" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>"></iframe>
 				<form>
 					<label for="Fname">First name:</label><br>
