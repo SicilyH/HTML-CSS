@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 .row > .column {
   padding: 0 8px;
 }
@@ -8,10 +11,10 @@
   clear: both;
 }
 
-/* Create four equal columns that floats next to eachother */
+/* Create three equal columns that floats next to each other */
 .column {
   float: left;
-  width: 25%;
+  width: 33.3%;
 }
 
 /* The Modal (background) */
@@ -107,7 +110,7 @@
   color: white;
 }
 
-img.demo {
+.demo {
   opacity: 0.6;
 }
 
